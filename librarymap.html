@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="projectmap.js"></script>
+    <link rel= "stylesheet" type="text/css" href="mapa.css">
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwYX4DoTLRPxu4n46g2hGDeHEAVYqBrdU&callback=initMap">
+      </script>
+  </head>
+  <body>
+  Add a Library
+    Latitude:<br>
+    <input id="lat" type="text" name="lat" value=""><br>
+    Longitude:<br>
+    <input id="long" type="text" name="long" value=""><br><br>
+
+
+  <p>
+  <button id="search" onclick="search()">Search</button>
+  <button onclick="panHome()">Pan back to Home</button>
+
+  </p>
+
+
+    <h3>My Google Maps Demo</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+  </body>
+</html>
